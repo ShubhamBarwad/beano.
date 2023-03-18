@@ -38,11 +38,10 @@ export default function CreatePost(props) {
     formData.append("email", session?.user.email);
     formData.append("profilePic", session?.user.image);
     axios.post(BEANO_ENDPOINT, formData, {
-      headers: {Accept: "application/json"},
-    })
-    .then((respose) => {
+      headers: {Accept: "application/json"}
+    }).then((respose) => {
       inputRef.current.value = "";
-      dispatch(addPost);
+      dispatch(addPost(respose.data));
       console.log(respose);
       removeImage();
     })

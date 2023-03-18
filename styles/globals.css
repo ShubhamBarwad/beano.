@@ -256,6 +256,17 @@ p strong{
 .posts-div{
   gap: 15px;
 }
+.login{
+  height: 100vh;
+  padding-top: 30vh;
+  gap: 2rem;
+}
+.login h1{
+  font-size: 7rem;
+}
+.login a{
+  padding: 1rem 7rem;
+}
 
 
 
@@ -333,4 +344,8 @@ p strong{
     bottom:0; left: 0;
     justify-content: space-between;
   }
+  .login h1{
+    font-size: 5rem;
+  }
+  
 }
