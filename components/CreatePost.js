@@ -67,20 +67,20 @@ export default function CreatePost(props) {
         </div>
       )}
       <div className="attachments flex-row align-items justify-content-between">
-        <div onClick={handleClick}  className="attachment-div flex-row align-items justify-content-center">
+        <div onClick={handleClick}  className="attachment-div flex-row align-items justify-content-center pointer">
           <i className="material-symbols-rounded no-fill">image</i>
           <p className='level-2-font-size hide-on-mobile'>Image</p>
           <input onChange={addImageToPost} type="file" ref={hiddenFileInput} hidden accept="image/*" />
         </div>
-        <div className="attachment-div flex-row align-items justify-content-center">
+        <div className="attachment-div flex-row align-items justify-content-center pointer">
           <i className="material-symbols-rounded no-fill">attach_file</i>
           <p className='level-2-font-size hide-on-mobile'>Attachment</p>
         </div>
-        <div className="attachment-div flex-row align-items justify-content-center">
+        <div className="attachment-div flex-row align-items justify-content-center pointer">
         <i className="material-symbols-rounded no-fill">mic</i>
         <p className='level-2-font-size hide-on-mobile'>Audio</p>
         </div>
-        <button className='custom-button' onClick={handleSubmit}>Post</button>
+        <button className='custom-button pointer' onClick={handleSubmit}>Post</button>
       </div>
 
     </div>

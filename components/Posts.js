@@ -25,7 +25,7 @@ export default function posts() {
     }, []);
     
   return (
-    <div className='posts-div flex-col'>
+    <div className='posts-div flex-col'>  
         {posts.map((post)=>(
             <Post post={post} key={post.id} />
         ))} 

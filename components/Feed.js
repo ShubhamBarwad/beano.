@@ -7,6 +7,7 @@ export default function Feed() {
     <div className="central-column flex-col">
         <CreatePost/>
         <Posts/>
+        <h1 className='caught-up light-font'>You are all caught up!</h1>
     </div>
   )
 }

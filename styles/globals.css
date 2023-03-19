@@ -102,6 +102,9 @@ p strong{
 .central-column::-webkit-scrollbar {
   display: none;
 }
+.pointer{
+  cursor: pointer;
+}
 
 
 
@@ -286,6 +289,11 @@ p strong{
 .no-fill{
   font-variation-settings:
   'FILL' 0
+}
+.caught-up{
+  padding: 3rem 0 8rem 0;
+  width: 100%;
+  text-align: center;
 }
 
 
