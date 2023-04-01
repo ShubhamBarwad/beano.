@@ -10,6 +10,7 @@ export default function posts() {
     const dispatch = useDispatch();
     let count = 0;
     const posts = useSelector(selectPost);
+    console.log(posts)
     useEffect(() => {
       const fetchData = () =>{
         const response = axios.get(BEANO_ENDPOINT).then((response) => {
