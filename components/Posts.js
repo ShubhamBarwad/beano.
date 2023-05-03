@@ -16,7 +16,7 @@ export default function posts() {
         const response = axios.get(BEANO_ENDPOINT).then((response) => {
           if(response != null && count == 0){
             console.log(response)
-            dispatch(addAllPost(response.data));
+            dispatch(addAllPost(response.data.reverse()));
             count++;
           }
           

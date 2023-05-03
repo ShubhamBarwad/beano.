@@ -10,11 +10,10 @@ const showHideComments = (e) => {
 
 export default function Post({ post }) {
   const { data: session} = useSession();
-
   return (
     <div className='post card flex-col' key={post.id}>
         <div className='flex-row align-items post-user-name'>
-            <img src={post.profilePic} alt="profile-pic" className='profile-pic' />
+            <img src={session.user.image} alt="profile-pic" className='profile-pic' />
             <p className='level-1-5-font-size'><strong className='dark-font'>{post.name}</strong></p>
         </div>
         <p className='level-1-5-font-size'>{post.post}</p>
